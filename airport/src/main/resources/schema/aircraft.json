@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Самолет",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "runway": {
+      "type": "string",
+      "maxLength": 128,
+      "description": "посадочная полоса"
+    },
+    "product": {
+      "$ref": "../../../../../common/src/main/resources/schema1/product.json#/definitions/product",
+      "description": "Товар"
+    }
+  },
+  "definitions": {
+    "product_type": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "address": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Адрес"
+        },
+        "index":{
+          "type": "integer",
+          "description": "Индекс"
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+{
+  "definitions": {
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "address": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Адрес"
+        },
+        "index":{
+          "type": "integer",
+          "description": "Индекс"
+        }
+      }
+    }
+  }
+}
